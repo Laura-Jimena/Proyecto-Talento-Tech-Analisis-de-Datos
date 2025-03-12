@@ -10,3 +10,9 @@ df=pd.DataFrame(
 )
 
 st.dataframe(df.style.highlight_max(axis=0))
+
+data=pd.DataFrame(
+    np.random.randn(20,3),
+    columns=["a","b","c"]
+)
+st.line_chart(data)
